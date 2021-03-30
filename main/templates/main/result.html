@@ -1,0 +1,16 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+
+    <div style="margin-top: 10%; display: flex; justify-content: center">
+    {% for res in result %}
+        {% if r1 == res.gender and r2 == res.exercise and r3 == res.endurance_or_strength and r4 == res.body_part and r5 == res.problems %}
+            <div>
+                <h2>{{ res.exercise_name }}</h2>
+                <p>{{ res.description }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+
+{% endblock %}
