@@ -9,7 +9,7 @@ class Data(models.Model):
     body_part = models.CharField(max_length=10)
     problems = models.CharField(max_length=10)
     exercise_name = models.CharField(max_length=25, default=None)
-    description = models.CharField(max_length=500, default=None)
+    description = models.CharField(max_length=650, default=None)
 
     def __str__(self):
         return self.exercise_name
